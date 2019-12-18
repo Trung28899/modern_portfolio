@@ -1,6 +1,6 @@
 @import "config";
 @import "menu";
-@import "mobile";
+
 * {
   box-sizing: border-box;
 }
@@ -8,7 +8,9 @@
 body {
   @include background;
   background: $primary-color;
-  color: #fff;
+  // this make the text color black when the background is light
+  // function in config file
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
 
@@ -51,7 +53,10 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
+  //height: 100%;
+  // making footer stays at the end of page
+  // 17:00 vid 5
+  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -74,3 +79,59 @@ main {
     }
   }
 }
+
+// About Me styling
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  // line 1 1 bioimage and 2 bio texts
+  // line 2 1 job per column
+  // grid areas will be defined
+  grid-template-areas:
+    "bioimage bio bio"
+    "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+// Defining grid areas
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: $secondary-color 3px solid;
+}
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+
+.job-1 {
+  grid-area: job1;
+}
+
+.job-2 {
+  grid-area: job2;
+}
+
+.job-3 {
+  grid-area: job3;
+}
+
+.job {
+  // lighten the background
+  background: lighten($primary-color, $amount: 5);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px solid;
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
+}
+
+// implement media queries
+@import "mobile";
