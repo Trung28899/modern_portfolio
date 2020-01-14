@@ -10,6 +10,9 @@
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+  .title {
+    margin-top: 5.1rem;
+  }
 }
 
 // Table and Small Laptops
@@ -56,6 +59,7 @@
     grid-template-areas:
       "bioimage"
       "bio"
+      "experience"
       "job1"
       "job2"
       "job3";

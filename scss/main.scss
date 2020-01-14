@@ -36,6 +36,10 @@ h3 {
   }
 }
 
+h6 {
+  font-size: 0.8rem;
+}
+
 a {
   color: #fff;
   text-decoration: none;
@@ -49,6 +53,10 @@ header {
 
 .text-secondary {
   color: $secondary-color;
+}
+
+.title {
+  margin-top: 3.4rem;
 }
 
 main {
@@ -89,6 +97,19 @@ main {
   // grid areas will be defined
   grid-template-areas:
     "bioimage bio bio"
+    "experience experience experience"
+    "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.more-info {
+  display: grid;
+  grid-gap: 30px;
+  // line 1 1 bioimage and 2 bio texts
+  // line 2 1 job per column
+  // grid areas will be defined
+  grid-template-areas:
+    "experience experience experience"
     "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr);
 }
@@ -107,26 +128,37 @@ main {
   font-size: 1.2rem;
 }
 
-.job-1 {
+.sectionName {
+  grid-area: experience;
+  font-size: 1.35rem;
+}
+
+.hr1 {
+  border: solid $secondary-color;
+}
+
+.job-1,
+.achieve-1 {
   grid-area: job1;
 }
 
-.job-2 {
+.job-2,
+.achieve-2 {
   grid-area: job2;
 }
 
-.job-3 {
+.job-3,
+.achieve-3 {
   grid-area: job3;
 }
 
-.job {
+.job,
+.achieve {
   // lighten the background
   background: lighten($primary-color, $amount: 5);
   padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
-  &h6 {
-    color: yellow;
-  }
+  text-align: center;
 }
 
 // Work/Projects

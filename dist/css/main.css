@@ -131,6 +131,9 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
 
+h6 {
+  font-size: 0.8rem; }
+
 a {
   color: #fff;
   text-decoration: none; }
@@ -142,6 +145,9 @@ header {
 
 .text-secondary {
   color: #eece1a; }
+
+.title {
+  margin-top: 3.4rem; }
 
 main {
   padding: 4rem;
@@ -161,7 +167,13 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }
+
+.more-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
@@ -175,21 +187,31 @@ main {
   grid-area: bio;
   font-size: 1.2rem; }
 
-.job-1 {
+.sectionName {
+  grid-area: experience;
+  font-size: 1.35rem; }
+
+.hr1 {
+  border: solid #eece1a; }
+
+.job-1,
+.achieve-1 {
   grid-area: job1; }
 
-.job-2 {
+.job-2,
+.achieve-2 {
   grid-area: job2; }
 
-.job-3 {
+.job-3,
+.achieve-3 {
   grid-area: job3; }
 
-.job {
+.job,
+.achieve {
   background: #515151;
   padding: 0.5rem;
-  border-bottom: #eece1a 5px solid; }
-  .jobh6 {
-    color: yellow; }
+  border-bottom: #eece1a 5px solid;
+  text-align: center; }
 
 .projects {
   display: grid;
@@ -252,7 +274,9 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .title {
+    margin-top: 5.1rem; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -282,7 +306,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
