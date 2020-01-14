@@ -66,6 +66,20 @@
     grid-template-columns: 1fr;
   }
 
+  .more-info{
+    // see defining template areas in main.scss
+    grid-template-areas:
+      "experience"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
+  }
+
+  .sectionName {
+    margin-top: 2rem;
+  }
+
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }

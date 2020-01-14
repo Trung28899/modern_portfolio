@@ -167,13 +167,13 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .more-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
@@ -306,8 +306,13 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
+  .more-info {
+    grid-template-areas: "experience" "job1" "job2" "job3";
+    grid-template-columns: 1fr; }
+  .sectionName {
+    margin-top: 2rem; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
