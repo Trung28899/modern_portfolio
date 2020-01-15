@@ -83,6 +83,16 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  //Slideshow styling: 
+  .next {
+    top: 45%;
+  }
+
+  .prev {
+    top: 45%; 
+    right: 37rem;
+  }
 }
 
 // Smartphones
@@ -94,4 +104,15 @@
   .projects {
     grid-template-columns: 1fr;
   }
+
+    //Slideshow styling: 
+    .next, .prev {
+      top: 45%;
+      padding: 12px;
+      font-size: 1.3rem; 
+    }
+  
+    .prev {
+      right: 16.5rem;
+    }
 }
