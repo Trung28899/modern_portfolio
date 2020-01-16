@@ -167,13 +167,13 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .more-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
@@ -222,7 +222,34 @@ main {
 .mySlides {
   display: none; }
 
+.mySlides img,
+.mySlides video {
+  vertical-align: middle;
+  width: 60%;
+  height: 60vh;
+  margin-left: 20%;
+  padding: 0.4rem;
+  background: #eece1a; }
+
+.mySlides video {
+  vertical-align: middle;
+  width: 60%;
+  height: 60vh;
+  margin-left: 20%;
+  padding: 0.4rem 0rem;
+  background: #eece1a; }
+
+#picture1,
+#video1 {
+  vertical-align: middle;
+  width: 80%;
+  height: 60vh;
+  margin-left: 10%; }
+
 img {
+  vertical-align: middle; }
+
+source {
   vertical-align: middle; }
 
 /* Slideshow container */
@@ -233,10 +260,11 @@ img {
   padding-top: 2.5rem; }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: auto;
   padding: 16px;
   color: white;
@@ -248,20 +276,24 @@ img {
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right: 10vw;
   border-radius: 3px 0 0 3px; }
 
+.prev {
+  right: 60.5vw; }
+
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
   background-color: rgba(0, 0, 0, 0.8); }
 
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  font-size: 1rem;
+  padding: 0.3rem 0.4rem;
   position: absolute;
-  bottom: 8px;
+  bottom: 3rem;
   width: 100%;
   text-align: center; }
 
@@ -271,7 +303,7 @@ img {
   font-size: 0.8rem;
   font-weight: bold;
   padding-top: 4rem;
-  padding-left: 2rem;
+  padding-left: 14rem;
   position: absolute;
   top: 0; }
 
@@ -286,7 +318,8 @@ img {
   display: inline-block;
   transition: background-color 0.6s ease; }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171; }
 
 /* Fading animation */
@@ -298,19 +331,21 @@ img {
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4; }
+    opacity: 0.4; }
   to {
     opacity: 1; } }
 
 @keyframes fade {
   from {
-    opacity: .4; }
+    opacity: 0.4; }
   to {
     opacity: 1; } }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next, .text {
+  .prev,
+  .next,
+  .text {
     font-size: 11px; } }
 
 /* SHOWCASE IMAGE STYLING ENDS */
@@ -407,10 +442,10 @@ img {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .more-info {
-    grid-template-areas: "experience" "job1" "job2" "job3";
+    grid-template-areas: "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .sectionName {
     margin-top: 2rem; }
