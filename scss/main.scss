@@ -184,12 +184,7 @@ main {
 }
 
 .mySlides video {
-  vertical-align: middle;
-  width: 60%;
-  height: 60vh;
-  margin-left: 20%;
   padding: 0.4rem 0rem;
-  background: $secondary-color;
 }
 
 #picture1,
@@ -254,7 +249,7 @@ source {
   font-size: 1rem;
   padding: 0.3rem 0.4rem;
   position: absolute;
-  bottom: 3rem;
+  bottom: 5rem;
   width: 100%;
   text-align: center;
 }

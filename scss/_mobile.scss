@@ -13,6 +13,19 @@
   .title {
     margin-top: 5.1rem;
   }
+
+  //About me Experience showcase
+  .mySlides img,
+  .mySlides video, 
+  #picture1,
+  #video1 {
+    height: 50vh;
+  }
+
+  .prev {
+    right: 73vw;
+  }
+
 }
 
 // Table and Small Laptops
@@ -84,14 +97,35 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  //Slideshow styling: 
-  .next {
-    top: 45%;
+  //about me experience showcase
+  .mySlides img,
+  .mySlides video{
+    width: 73%;
+    height: 55vh;
+    margin-left: -2%;
+  }
+
+  #picture1,
+  #video1 {
+    width: 95%;
+    height: 55vh;
+    margin-left: -3%;
   }
 
   .prev {
-    top: 45%; 
-    right: 37rem;
+    right: 73.5vw;
+  }
+
+  .next {
+    right: 6vw;
+  }
+
+  .numbertext{
+    padding-left: 7rem;
+  }
+
+  .text{
+    bottom: 5rem;
   }
 }
 
@@ -106,13 +140,39 @@
   }
 
     //Slideshow styling: 
-    .next, .prev {
-      top: 45%;
-      padding: 12px;
-      font-size: 1.3rem; 
+    .mySlides img,
+    .mySlides video{
+      width: 120%;
+      height: 38vh;
+      margin-left: -10%;
+    }
+  
+    #picture1,
+    #video1 {
+      width: 130%;
+      height: 38vh;
+      margin-left: -15%;
     }
   
     .prev {
-      right: 16.5rem;
+      right: 78.5vw;
+      font-size: 1rem;
+      padding: 0.5rem; 
+      top: 48%
+    }
+  
+    .next {
+      right: -14vw;
+      font-size: 1rem ;
+      padding: 0.5rem;
+      top: 48%; 
+    }
+  
+    .numbertext{
+      padding-left: 0rem;
+    }
+  
+    .text{
+      bottom: 3.5rem;
     }
 }
