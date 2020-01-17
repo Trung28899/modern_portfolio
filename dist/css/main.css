@@ -275,7 +275,7 @@ source {
   border-radius: 3px 0 0 3px; }
 
 .prev {
-  right: 93.5vw; }
+  right: 60.5vw; }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
@@ -399,7 +399,7 @@ source {
   color: #fff;
   height: 60px; }
 
-@media screen and (min-width: 1171px) {
+@media screen and (min-width: 1441px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
