@@ -399,11 +399,17 @@ source {
   color: #fff;
   height: 60px; }
 
-@media screen and (min-width: 1026px) {
+@media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
 
-@media screen and (min-width: 769px) and (max-width: 1025px) {
+@media screen and (min-width: 1170px) and (max-width: 1440px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); }
+  .prev {
+    right: 57.5vw; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .title {

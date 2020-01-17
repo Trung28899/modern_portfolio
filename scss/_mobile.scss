@@ -5,6 +5,16 @@
   }
 }
 
+@include mediaLger {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .prev {
+    right: 57.5vw;
+  }
+}
+
 // Desktop & Laptop
 @include mediaLg {
   .projects {
