@@ -275,7 +275,7 @@ source {
   border-radius: 3px 0 0 3px; }
 
 .prev {
-  right: 99.5vw; }
+  right: 63.5vw; }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
@@ -494,7 +494,7 @@ source {
     height: 38vh;
     margin-left: -15%; }
   .prev {
-    right: 78.5vw;
+    right: 73.5vw;
     font-size: 1rem;
     padding: 0.5rem;
     top: 48%; }
