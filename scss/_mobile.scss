@@ -29,11 +29,11 @@
   .mySlides video, 
   #picture1,
   #video1 {
-    height: 50vh;
+    height: 35vh;
   }
 
   .prev {
-    right: 73vw;
+    right: 82%;
   }
 
 }
@@ -177,4 +177,9 @@
     .numbertext{
       padding-left: 0rem;
     } 
+
+    .text{
+      bottom: -18%; 
+      font-size: 0.9rem;
+    }
 }

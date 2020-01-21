@@ -420,9 +420,9 @@ source {
   .mySlides video,
   #picture1,
   #video1 {
-    height: 50vh; }
+    height: 35vh; }
   .prev {
-    right: 73vw; } }
+    right: 82%; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -504,4 +504,7 @@ source {
     padding: 0.5rem;
     top: 48%; }
   .numbertext {
-    padding-left: 0rem; } }
+    padding-left: 0rem; }
+  .text {
+    bottom: -18%;
+    font-size: 0.9rem; } }
