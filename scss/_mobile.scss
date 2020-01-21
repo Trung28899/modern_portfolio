@@ -111,14 +111,14 @@
   .mySlides img,
   .mySlides video{
     width: 73%;
-    height: 55vh;
+    height: 40vh;
     margin-left: -2%;
   }
 
   #picture1,
   #video1 {
     width: 95%;
-    height: 55vh;
+    height: 40vh;
     margin-left: -3%;
   }
 
@@ -132,10 +132,6 @@
 
   .numbertext{
     padding-left: 7rem;
-  }
-
-  .text{
-    bottom: 5rem;
   }
 }
 
@@ -153,26 +149,26 @@
     .mySlides img,
     .mySlides video{
       width: 120%;
-      height: 38vh;
+      height: 32vh;
       margin-left: -10%;
     }
   
     #picture1,
     #video1 {
       width: 130%;
-      height: 38vh;
+      height: 32vh;
       margin-left: -15%;
     }
   
     .prev {
-      right: 73.5vw;
+      right: 100%;
       font-size: 1rem;
       padding: 0.5rem; 
       top: 48%
     }
   
     .next {
-      right: -14vw;
+      right: -10%;
       font-size: 1rem ;
       padding: 0.5rem;
       top: 48%; 
@@ -180,9 +176,5 @@
   
     .numbertext{
       padding-left: 0rem;
-    }
-  
-    .text{
-      bottom: 3.5rem;
-    }
+    } 
 }
