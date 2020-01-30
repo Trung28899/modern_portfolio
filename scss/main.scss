@@ -88,7 +88,11 @@ main {
   }
 }
 
-// About Me styling
+/*******************************************************
+ * *****************************************************
+ * STYLING FOR ABOUT ME PAGE *
+********************************************************
+********************************************************/
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -276,7 +280,7 @@ source {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-  top: 30rem; 
+  top: 30rem;
 }
 
 .active,
@@ -320,7 +324,11 @@ source {
 }
 /* SHOWCASE IMAGE STYLING ENDS */
 
-// Work/Projects
+/*******************************************************
+ * *****************************************************
+ * STYLING FOR MY WORK PAGE*
+********************************************************
+********************************************************/
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -331,14 +339,17 @@ source {
     border: 3px #fff solid;
 
     &:hover {
-      opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
     }
   }
 }
 
-// Contact Page
+/*******************************************************
+ * *****************************************************
+ * STYLING FOR CONTACT PAGE*
+********************************************************
+********************************************************/
 .boxes {
   display: flex;
   flex-wrap: wrap;

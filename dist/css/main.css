@@ -164,16 +164,21 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
+/*******************************************************
+ * *****************************************************
+ * STYLING FOR ABOUT ME PAGE *
+********************************************************
+********************************************************/
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .more-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
@@ -346,6 +351,11 @@ source {
     font-size: 11px; } }
 
 /* SHOWCASE IMAGE STYLING ENDS */
+/*******************************************************
+ * *****************************************************
+ * STYLING FOR MY WORK PAGE*
+********************************************************
+********************************************************/
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -354,10 +364,14 @@ source {
     width: 100%;
     border: 3px #fff solid; }
     .projects img:hover {
-      opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
 
+/*******************************************************
+ * *****************************************************
+ * STYLING FOR CONTACT PAGE*
+********************************************************
+********************************************************/
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -452,10 +466,10 @@ source {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .more-info {
-    grid-template-areas: "experience" "job1" "job2" "job3";
+    grid-template-areas: "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .sectionName {
     margin-top: 2rem; }
