@@ -334,11 +334,41 @@ source {
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
 
+  .hoverText{
+    position: relative;
+    top: -6.5rem; 
+    text-align: center;
+    padding: 0rem 0rem;
+    margin: 0rem 0rem; 
+    visibility: hidden; 
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  .items:hover .hoverText{
+    visibility: visible;
+  }
+
+  .btn-light, 
+  .btn-dark{
+    position: relative;
+    top: -2rem;
+  }
+
+  .projectName{
+    position: relative;
+    top: -2rem; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
   img {
     width: 100%;
     border: 3px #fff solid;
 
-    &:hover {
+    &:hover{
+      opacity: 0.4;
       border-color: $secondary-color;
       @include easeOut;
     }

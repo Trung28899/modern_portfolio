@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      .example{
+      position:relative;
+      padding:0;
+      width:300px;
+      display:block;
+      cursor:pointer;
+      overflow:hidden;
+      }
+
+      .content {
+      opacity:0;
+      font-size: 40px;
+      position:absolute;
+      top:0;
+      left:0;
+      color:#1c87c9;
+      background-color:rgba(200,200,200,0.5);
+      width:300px;
+      height:300px;
+      }
+      
+      .example .content:hover { opacity:2.5; }      
+      .example .content .text {
+      height:0;
+      opacity:1;
+      transition-delay: 0s;
+      transition-duration: 0.4s;
+      }
+      .example .content:hover .text {
+      opacity:1;
+      transform: translateY(250px);
+      -webkit-transform: translateY(250px);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Animated Text Over a Faded Image on Hover</h2>
+    <div class="example">
+      <img src="dist/img/pic2.jpg" 
+        width="300" height="300" alt="tree" />
+      <div class="content">
+        <div class="text">Tree</div>
+      </div>
+    </div>
+  </body>
+</html>
