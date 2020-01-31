@@ -172,13 +172,13 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .more-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
@@ -264,7 +264,6 @@ source {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 45%;
   width: auto;
   padding: 16px;
   color: white;
@@ -272,7 +271,8 @@ source {
   font-size: 1.5rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none; }
+  user-select: none;
+  top: 45%; }
 
 /* Position the "next button" to the right */
 .next {
@@ -419,11 +419,11 @@ source {
   top: 1.5rem;
   position: fixed;
   width: 50%;
-  height: 95%;
+  height: 90%;
   left: 25%;
   z-index: 1;
   top: 0;
-  background-color: #cabebe;
+  background-color: white;
   transition: 0.5s;
   z-index: 1;
   display: grid;
@@ -432,11 +432,80 @@ source {
   .content .images img {
     position: relative;
     width: 100%;
-    height: 24rem; }
-  .content .gap {
+    height: 25rem; }
+  .content .images .prevWork,
+  .content .images .nextWork {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 48%; }
+  .content .images .prevWork {
+    left: 0; }
+  .content .images .nextWork {
+    right: 0; }
+  .content .images .gap {
     position: relative;
     background-color: black;
     height: 0.3rem; }
+  .content .content-container {
+    margin: 1.5rem 1.5rem; }
+    .content .content-container .projectName {
+      position: relative;
+      font-weight: bold;
+      font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      font-size: 1.5rem;
+      color: #333; }
+    .content .content-container .projectBrief {
+      position: relative;
+      font-size: 1rem;
+      color: #757474;
+      font-family: Georgia, serif;
+      top: -0.5rem; }
+    .content .content-container hr {
+      position: relative; }
+    .content .content-container .projectDescription {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 0.95rem; }
+  .content .btnView {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    height: 15%;
+    width: 20%;
+    background-color: #db3939;
+    color: seashell;
+    margin-top: 1.5rem;
+    margin-left: -0.3rem;
+    font-family: Georgia, serif;
+    transition: all 0.5s ease-out; }
+    .content .btnView:hover {
+      background-color: seashell;
+      color: #db3939; }
+  .content .menu-button {
+    position: relative;
+    z-index: 3;
+    right: -40rem;
+    top: -2rem;
+    cursor: pointer; }
+    .content .menu-button .button-line {
+      width: 28px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background: #000;
+      transition: all 0.5s ease-out; }
+      .content .menu-button .button-line:nth-child(1) {
+        transform: rotate(45deg) translate(2px, 4px); }
+      .content .menu-button .button-line:nth-child(2) {
+        transform: rotate(-45deg) translate(2px, -4px); }
 
 /*******************************************************
  * *****************************************************
@@ -529,10 +598,10 @@ source {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .more-info {
-    grid-template-areas: "experience" "job1" "job2" "job3";
+    grid-template-areas: "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .sectionName {
     margin-top: 2rem; }
