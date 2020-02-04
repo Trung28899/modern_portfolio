@@ -36,9 +36,72 @@
     right: 82%;
   }
 
+  /*******************************************
+  *******************************************
+   MY WORK STYLING
+  *******************************************
+  *******************************************/
+  .content{
+    width: 80%; 
+    left: 10%; 
+    height: 85%;
+    
+    .images{
+      img{
+        height: 41rem;
+      }
+
+      .gap{
+        height: 0.4rem;
+      }
+
+      .prevWork, 
+      .nextWork{
+        font-size: 2.3rem;
+        padding: 25px; 
+      }
+    }
+
+    .content-container{
+      position: relative;
+      top: -10%; 
+
+      .projectName{
+        font-size: 1.8rem;
+      }
+
+      .projectBrief{
+        font-size: 1.2rem; 
+      }
+
+      hr{
+        top: 8%; 
+      }
+
+      .projectDescription{
+        position: relative;
+        font-size: 1.2rem;
+        top: 8%; 
+      }
+
+      .btnView{
+        position: relative;
+        top: 25%; 
+        height: 15%;
+        padding-top: 1rem;
+        padding-left: 1.4rem;
+      }
+
+      .close-button{
+        right: -45rem;
+        top: 4rem; 
+      }
+    }
+  }
+
 }
 
-// Table and Small Laptops
+// Tablet and Small Laptops
 @include mediaMd {
   main {
     align-items: center;
@@ -133,6 +196,48 @@
   .numbertext{
     padding-left: 7rem;
   }
+
+/*******************************************
+  *******************************************
+   MY WORK STYLING
+  *******************************************
+  *******************************************/
+  .content{
+    width: 80%; 
+    left: 10%; 
+    height: 85%;
+    top: 7.5%; 
+    
+    .images{
+      img{
+        height: 30rem;
+      }
+
+      .gap{
+        height: 0.4rem;
+      }
+    }
+
+    .content-container{
+      position: relative;
+      top: -5%; 
+
+      .btnView{
+        position: relative;
+        top: 20%; 
+        height: 15%;
+        width: 25%;
+        padding-top: 0.8rem;
+      }
+
+      .close-button{
+        right: -33rem;
+        top: 2.5rem; 
+      }
+    }
+  }
+
+
 }
 
 // Smartphones
