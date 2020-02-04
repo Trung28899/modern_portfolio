@@ -500,7 +500,7 @@ source {
       width: 28px;
       height: 3px;
       margin: 0 0 5px 0;
-      background: #000;
+      background-color: grey;
       transition: all 0.5s ease-out; }
       .content .close-button .button-line:nth-child(1) {
         transform: rotate(45deg) translate(2px, 4px); }
@@ -575,39 +575,38 @@ source {
   *******************************************
   *******************************************/
   .content {
-    width: 80%;
-    left: 10%;
-    height: 85%; }
+    width: 65%;
+    left: 17.5%;
+    height: 65%;
+    top: 18.5%; }
     .content .images img {
-      height: 41rem; }
+      height: 35rem; }
     .content .images .gap {
       height: 0.4rem; }
     .content .images .prevWork,
     .content .images .nextWork {
-      font-size: 2.3rem;
-      padding: 25px; }
+      font-size: 2rem;
+      padding: 20px;
+      top: 53.5%; }
     .content .content-container {
       position: relative;
-      top: -10%; }
-      .content .content-container .projectName {
-        font-size: 1.8rem; }
-      .content .content-container .projectBrief {
-        font-size: 1.2rem; }
-      .content .content-container hr {
-        top: 8%; }
+      top: 0%; }
       .content .content-container .projectDescription {
         position: relative;
-        font-size: 1.2rem;
-        top: 8%; }
+        font-size: 1.1rem; }
       .content .content-container .btnView {
         position: relative;
-        top: 25%;
-        height: 15%;
-        padding-top: 1rem;
+        top: 3%;
+        height: 10%;
+        width: 25%;
+        padding-top: 0.8rem;
         padding-left: 1.4rem; }
       .content .content-container .close-button {
-        right: -45rem;
-        top: 4rem; } }
+        right: -36rem;
+        top: -1.5rem; }
+        .content .content-container .close-button .button-line {
+          width: 22px;
+          height: 3px; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -668,26 +667,39 @@ source {
   *******************************************
   *******************************************/
   .content {
-    width: 80%;
-    left: 10%;
-    height: 85%;
-    top: 7.5%; }
+    width: 65%;
+    left: 17.5%;
+    height: 70%;
+    top: 15%; }
     .content .images img {
-      height: 30rem; }
+      height: 27rem; }
     .content .images .gap {
       height: 0.4rem; }
+    .content .images .prevWork,
+    .content .images .nextWork {
+      top: 51%; }
     .content .content-container {
       position: relative;
-      top: -5%; }
+      top: 0%; }
+      .content .content-container .projectName {
+        font-size: 1.2rem; }
+      .content .content-container .projectBrief {
+        font-size: 0.9rem; }
+      .content .content-container .projectDescription {
+        position: relative; }
       .content .content-container .btnView {
         position: relative;
-        top: 20%;
-        height: 15%;
-        width: 25%;
-        padding-top: 0.8rem; }
+        height: 10%;
+        width: 30%;
+        top: -3%;
+        font-size: 0.75rem; }
       .content .content-container .close-button {
-        right: -33rem;
-        top: 2.5rem; } }
+        right: -26rem;
+        top: -2.5rem;
+        padding: 0.3rem 0.8rem; }
+        .content .content-container .close-button .button-line {
+          width: 22px;
+          height: 3px; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -718,4 +730,55 @@ source {
     padding-left: 0rem; }
   .text {
     bottom: -18%;
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+  /*******************************************
+  *******************************************
+   MY WORK STYLING
+  *******************************************
+  *******************************************/
+  .content {
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%; }
+    .content .images img {
+      height: 25rem; }
+    .content .images .gap {
+      height: 0.4rem; }
+    .content .images .prevWork,
+    .content .images .nextWork {
+      top: 44%;
+      padding: 10px;
+      width: 15%;
+      font-size: 1.1rem; }
+    .content .content-container {
+      position: relative;
+      top: 0%; }
+      .content .content-container .projectName {
+        position: relative;
+        font-size: 1rem;
+        top: -9%; }
+      .content .content-container .projectBrief {
+        font-size: 0.75rem;
+        position: relative;
+        top: -9%; }
+      .content .content-container hr {
+        top: -9%; }
+      .content .content-container .projectDescription {
+        position: relative;
+        top: -9%; }
+      .content .content-container .btnView {
+        position: fixed;
+        height: 4.5%;
+        width: 30%;
+        font-size: 0.75rem;
+        top: 91%; }
+      .content .content-container .close-button {
+        position: fixed;
+        right: 1%;
+        top: 95%;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.5rem; }
+        .content .content-container .close-button .button-line {
+          width: 22px;
+          height: 3px; } }

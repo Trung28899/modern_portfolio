@@ -501,7 +501,7 @@ top: 45%;
       height: 3px;
       margin: 0 0 5px 0;
       // function in config file
-      background: set-text-color(seashell);
+      background-color: grey;
       @include easeOut;
 
       &:nth-child(1) {
