@@ -396,6 +396,12 @@ top: 45%;
   overflow: hidden;
   transition: 0.5s;
   z-index: 0;
+  visibility: hidden;
+  @include easeOut; 
+
+  &.show{
+    visibility: visible;
+  }
 }
 
 .content {
@@ -412,6 +418,18 @@ top: 45%;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0em;
+  visibility: hidden;
+
+  &.show{
+    visibility: visible;
+    @include easeOut; 
+    //mymove is the function in _config.scss
+    animation: mymove 1s ease; 
+  }
+
+  &.close{
+    animation: mymoveclose 1s ease;
+  }
 
   .images {
     img {

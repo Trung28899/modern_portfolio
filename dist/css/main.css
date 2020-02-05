@@ -1,16 +1,52 @@
+@keyframes mymove {
+  from {
+    top: -95%; }
+  to {
+    top: 0%; } }
+
+@keyframes mymoveIpad {
+  from {
+    top: -95%; }
+  to {
+    top: 15%; } }
+
+@keyframes mymoveIpadPro {
+  from {
+    top: -95%; }
+  to {
+    top: 18.5%; } }
+
+@keyframes mymoveclose {
+  from {
+    top: 0%; }
+  to {
+    top: -95%; } }
+
+@keyframes mymovecloseIpad {
+  from {
+    top: 15%; }
+  to {
+    top: -95%; } }
+
+@keyframes mymovecloseIpadPro {
+  from {
+    top: 18.5%; }
+  to {
+    top: -95%; } }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-out; }
+  transition: all 0.65s ease-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #fff;
-    transition: all 0.5s ease-out; }
+    transition: all 0.65s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -43,13 +79,13 @@
     background: #373737;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.65s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #444;
     transform: translate3d(0, 100%, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.65s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
@@ -62,7 +98,7 @@
       border: solid 3px #eece1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.65s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
@@ -158,7 +194,7 @@ main {
       padding: 0.4rem; }
       main .icons a:hover {
         color: #eece1a;
-        transition: all 0.5s ease-out; }
+        transition: all 0.65s ease-out; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -401,7 +437,7 @@ source {
     .projects img:hover {
       opacity: 0.3;
       border-color: #eece1a;
-      transition: all 0.5s ease-out; }
+      transition: all 0.65s ease-out; }
 
 .background {
   position: fixed;
@@ -413,7 +449,11 @@ source {
   background-color: #444;
   overflow: hidden;
   transition: 0.5s;
-  z-index: 0; }
+  z-index: 0;
+  visibility: hidden;
+  transition: all 0.65s ease-out; }
+  .background.show {
+    visibility: visible; }
 
 .content {
   top: 1.5rem;
@@ -428,7 +468,14 @@ source {
   z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 0em; }
+  grid-gap: 0em;
+  visibility: hidden; }
+  .content.show {
+    visibility: visible;
+    transition: all 0.65s ease-out;
+    animation: mymove 1s ease; }
+  .content.close {
+    animation: mymoveclose 1s ease; }
   .content .images img {
     position: relative;
     width: 100%;
@@ -486,7 +533,7 @@ source {
     margin-top: 1.5rem;
     margin-left: -0.3rem;
     font-family: Georgia, serif;
-    transition: all 0.5s ease-out; }
+    transition: all 0.65s ease-out; }
     .content .btnView:hover {
       background-color: seashell;
       color: #db3939; }
@@ -501,7 +548,7 @@ source {
       height: 3px;
       margin: 0 0 5px 0;
       background-color: grey;
-      transition: all 0.5s ease-out; }
+      transition: all 0.65s ease-out; }
       .content .close-button .button-line:nth-child(1) {
         transform: rotate(45deg) translate(2px, 4px); }
       .content .close-button .button-line:nth-child(2) {
@@ -523,7 +570,7 @@ source {
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
+    transition: all 0.65s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
       background: #eece1a;
@@ -579,6 +626,10 @@ source {
     left: 17.5%;
     height: 65%;
     top: 18.5%; }
+    .content.show {
+      animation: mymoveIpadPro 1s ease; }
+    .content.close {
+      animation: mymovecloseIpadPro 1s ease; }
     .content .images img {
       height: 35rem; }
     .content .images .gap {
@@ -623,6 +674,9 @@ source {
     ul.menu-nav.show,
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
+    ul.menu-nav.close,
+    div.menu-branding.close {
+      animation: mymovecloseIpad 1s ease; }
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
@@ -671,6 +725,8 @@ source {
     left: 17.5%;
     height: 70%;
     top: 15%; }
+    .content.show {
+      animation: mymoveIpad 1s ease; }
     .content .images img {
       height: 27rem; }
     .content .images .gap {

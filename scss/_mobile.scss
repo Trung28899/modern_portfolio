@@ -46,6 +46,14 @@
     left: 17.5%; 
     height: 65%;
     top: 18.5%; 
+
+    &.show{
+      animation: mymoveIpadPro 1s ease; 
+    }
+
+    &.close{
+      animation: mymovecloseIpadPro 1s ease;
+    }
     
     .images{
       img{
@@ -114,6 +122,10 @@
 
     &.show {
       transform: translate3d(0, 0, 0);
+    }
+
+    &.close{
+      animation: mymovecloseIpad 1s ease;
     }
   }
 
@@ -201,6 +213,10 @@
     left: 17.5%; 
     height: 70%;
     top: 15%; 
+
+    &.show{
+      animation: mymoveIpad 1s ease; 
+    }
     
     .images{
       img{
