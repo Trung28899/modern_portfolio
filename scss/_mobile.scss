@@ -83,7 +83,7 @@
 
       .btnView{
         position: relative;
-        top: 3%; 
+        top: 1%; 
         height: 10%;
         width: 25%;
         padding-top: 0.8rem;
@@ -91,7 +91,8 @@
       }
 
       .close-button{
-        right: -36rem;
+        position: relative;
+        right: -37rem;
         top: -1.5rem; 
         .button-line{
           width: 22px;
@@ -258,6 +259,7 @@
       }
 
       .close-button{
+        position: relative;
         right: -26rem;
         top: -2.5rem; 
         padding: 0.3rem 0.8rem;
@@ -330,7 +332,15 @@
     height: 100%; 
     left: 0%;
     top: 0%;
-    
+
+    &.show{
+      animation: mymovePhone 1s ease; 
+    }
+  
+    &.close{
+      animation: mymoveclosePhone 1s ease;
+    }
+
     .images{
       img{
         height: 25rem;
@@ -396,5 +406,22 @@
       }
     }
   }
+/*******************************************
+  *******************************************
+   CONTACT STYLING
+  *******************************************
+  *******************************************/
+  #contact{
+    .lg-heading{
+      position: relative;
+      right: 5%;
+      font-size: 5rem;
+    }
+  }
 
+  .boxes{
+    div{
+      font-size: 1.2rem;
+    }
+  }
 }
