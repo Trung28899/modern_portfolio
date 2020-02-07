@@ -399,6 +399,26 @@ source {
     font-size: 11px; } }
 
 /* SHOWCASE IMAGE STYLING ENDS */
+.get-resume {
+  position: absolute;
+  display: block;
+  padding: 0.5rem 0.5rem;
+  padding-left: 1rem;
+  width: 9%;
+  top: 12%;
+  right: 10%;
+  background-color: #db3939;
+  color: seashell;
+  margin-top: 1.5rem;
+  margin-left: -0.3rem;
+  font-family: Georgia, serif;
+  animation: mymoveIpad 1s ease;
+  font-weight: bold;
+  transition: all 0.35s ease-out; }
+  .get-resume:hover {
+    background-color: seashell;
+    color: #db3939; }
+
 /*******************************************************
  * *****************************************************
  * STYLING FOR MY WORK PAGE*
@@ -410,7 +430,7 @@ source {
   grid-template-columns: repeat(3, 1fr); }
   .projects .hoverText {
     position: relative;
-    top: -10rem;
+    top: -11rem;
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
@@ -425,7 +445,7 @@ source {
     border: 0;
     margin-bottom: 0.3rem;
     position: relative;
-    top: -10rem;
+    top: -11rem;
     font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
@@ -449,6 +469,7 @@ source {
     top: -20%; }
   .projects img {
     width: 100%;
+    height: 15rem;
     border: 3px #fff solid; }
 
 .background {
@@ -470,9 +491,9 @@ source {
 .content {
   top: 1.5rem;
   position: fixed;
-  width: 50%;
+  width: 45%;
   height: 90%;
-  left: 25%;
+  left: 27.5%;
   z-index: 1;
   top: 0;
   background-color: white;
@@ -491,7 +512,7 @@ source {
   .content .images img {
     position: relative;
     width: 100%;
-    height: 22rem; }
+    height: 25rem; }
   .content .images .prevWork,
   .content .images .nextWork {
     cursor: pointer;
@@ -545,6 +566,7 @@ source {
     height: 5%;
     width: 10%;
     top: 79%;
+    font-size: 0.85rem;
     background-color: #db3939;
     color: seashell;
     margin-top: 1.5rem;
@@ -559,7 +581,7 @@ source {
     position: fixed;
     z-index: 3;
     top: 84%;
-    right: 27%;
+    right: 30%;
     cursor: pointer; }
     .content .close-button .button-line {
       width: 28px;
@@ -634,6 +656,11 @@ source {
     height: 35vh; }
   .prev {
     right: 82%; }
+  .get-resume {
+    top: 5.5%;
+    text-align: center;
+    padding-left: 0.6rem;
+    font-weight: bold; }
   /*******************************************
   *******************************************
    MY WORK STYLING
@@ -660,9 +687,14 @@ source {
     .content .content-container {
       position: relative;
       top: 0%; }
+      .content .content-container .projectName,
+      .content .content-container .projectBrief,
+      .content .content-container hr {
+        top: 1%; }
       .content .content-container .projectDescription {
         position: relative;
-        font-size: 1.1rem; }
+        font-size: 1.1rem;
+        top: 1%; }
       .content .content-container .btnView {
         position: relative;
         top: 1%;
@@ -708,6 +740,8 @@ source {
       background-size: 150px;
       width: 150px;
       height: 150px; }
+  .get-resume {
+    visibility: hidden; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
@@ -756,12 +790,17 @@ source {
     .content .content-container {
       position: relative;
       top: 0%; }
+      .content .content-container .projectName,
+      .content .content-container .projectBrief,
+      .content .content-container hr {
+        top: 0.2%; }
       .content .content-container .projectName {
         font-size: 1.2rem; }
       .content .content-container .projectBrief {
         font-size: 0.9rem; }
       .content .content-container .projectDescription {
-        position: relative; }
+        position: relative;
+        top: 0.2%; }
       .content .content-container .btnView {
         position: relative;
         height: 10%;
@@ -782,6 +821,11 @@ source {
     margin-top: 10vh; }
   .projects {
     grid-template-columns: 1fr; }
+    .projects img {
+      height: 12.5rem; }
+    .projects .hoverText,
+    .projects .projectName {
+      top: -9.5rem; }
   .mySlides img,
   .mySlides video {
     width: 120%;
@@ -807,6 +851,8 @@ source {
   .text {
     bottom: -18%;
     font-size: 0.9rem; }
+  .get-resume {
+    visibility: hidden; }
   /*******************************************
   *******************************************
    MY WORK STYLING
@@ -822,14 +868,14 @@ source {
     .content.close {
       animation: mymoveclosePhone 1s ease; }
     .content .images img {
-      height: 25rem; }
+      height: 20rem; }
     .content .images .gap {
       height: 0.4rem; }
     .content .images .prevWork,
     .content .images .nextWork {
-      top: 44%;
-      padding: 10px;
-      width: 15%;
+      top: 35%;
+      padding: 8px;
+      width: 12%;
       font-size: 1.1rem; }
     .content .content-container {
       position: relative;
@@ -851,7 +897,7 @@ source {
         position: fixed;
         height: 4.5%;
         width: 30%;
-        font-size: 0.75rem;
+        font-size: 0.65rem;
         top: 91%; }
       .content .content-container .close-button {
         position: fixed;

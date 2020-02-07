@@ -315,6 +315,29 @@ top: 45%;
 }
 /* SHOWCASE IMAGE STYLING ENDS */
 
+.get-resume{
+  position: absolute;
+  display: block;
+  padding: 0.5rem 0.5rem;
+  padding-left: 1rem;
+  width: 9%;
+  top: 12%; 
+  right: 10%; 
+  background-color: rgb(219, 57, 57);
+  color: seashell;
+  margin-top: 1.5rem;
+  margin-left: -0.3rem;
+  font-family: Georgia, serif; 
+  animation: mymoveIpad 1s ease;
+  font-weight: bold;
+  @include easeOut; 
+
+  &:hover{
+    background-color: seashell;
+    color: rgb(219, 57, 57);
+  }
+}
+
 /*******************************************************
  * *****************************************************
  * STYLING FOR MY WORK PAGE*
@@ -327,7 +350,7 @@ top: 45%;
 
   .hoverText {
     position: relative;
-    top: -10rem;
+    top: -11rem;
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
@@ -345,7 +368,7 @@ top: 45%;
     margin-bottom: 0.3rem;
 
     position: relative;
-    top: -10rem;
+    top: -11rem;
     font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
@@ -381,6 +404,7 @@ top: 45%;
 
   img {
     width: 100%;
+    height: 15rem;
     border: 3px #fff solid;
   }
 }
@@ -407,9 +431,9 @@ top: 45%;
 .content {
   top: 1.5rem;
   position: fixed;
-  width: 50%;
+  width: 45%;
   height: 90%;
-  left: 25%;
+  left: 27.5%;
   z-index: 1;
   top: 0;
   background-color: rgb(255, 255, 255);
@@ -435,7 +459,7 @@ top: 45%;
     img {
       position: relative;
       width: 100%;
-      height: 22rem;
+      height: 25rem;
     }
 
     .prevWork, 
@@ -499,6 +523,7 @@ top: 45%;
     height: 5%;
     width: 10%;
     top: 79%; 
+    font-size: 0.85rem;
     background-color: rgb(219, 57, 57);
     color: seashell;
     margin-top: 1.5rem;
@@ -517,7 +542,7 @@ top: 45%;
     position: fixed;
     z-index: 3;
     top: 84%; 
-    right: 27%; 
+    right: 30%; 
     cursor: pointer;
   
     .button-line {

@@ -62,15 +62,15 @@
           <div class="items">
             <img
               class="itemImage"
-              src="dist/img/projects/project1.jpg"
+              src="dist/img/projects/project1.png"
               alt="project1"
             />
             <p class="projectName">Smart Mirror</p>
             <p class="hoverText">Android Studio / Firebase / Java</p>
           </div>
 
-          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
-          <a href="#" class="btn-dark">
+          <a href="#" onclick="passProjects(0)" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
+          <a href="https://github.com/Trung28899/SmartMirror4" class="btn-dark">
             <i class="fab fa-github"></i> Github
           </a>
         </div>
@@ -79,15 +79,15 @@
           <div class="items">
             <img
               class="itemImage"
-              src="dist/img/projects/project2.jpg"
+              src="dist/img/projects/PizzaOrder/screen1.png"
               alt="project1"
             />
             <p class="projectName">Pizza Order</p>
             <p class="hoverText">Android Studio / XML / Java</p>
           </div>
 
-          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
-          <a href="#" class="btn-dark">
+          <a href="#" onclick="passProjects(1)" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
+          <a href="https://github.com/Trung28899/PizzaOrder" class="btn-dark">
             <i class="fab fa-github"></i> Github
           </a>
         </div>
@@ -96,15 +96,15 @@
           <div class="items">
             <img
               class="itemImage"
-              src="dist/img/projects/project3.jpg"
+              src="dist/img/projects/portfolio/screen1.png"
               alt="project1"
             />
             <p class="projectName">Web Portfolio</p>
             <p class="hoverText">HTML5 / SASS / JavaScript</p>
           </div>
 
-          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
-          <a href="#" class="btn-dark">
+          <a href="#" onclick="passProjects(2)" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
+          <a href="https://github.com/Trung28899/modern_portfolio" class="btn-dark">
             <i class="fab fa-github"></i> Github
           </a>
         </div>
@@ -113,15 +113,15 @@
           <div class="items">
             <img
               class="itemImage"
-              src="dist/img/projects/project4.jpg"
+              src="dist/img/projects/Xdelivery/screen1.png"
               alt="project1"
             />
-            <p class="projectName">VietCan Delivery</p>
+            <p class="projectName">VietCan XDelivery</p>
             <p class="hoverText">HTML5 / CSS3 / JavaScript</p>
           </div>
 
-          <a class="btn-light"> <i class="fas fa-eye"></i> Project </a>
-          <a class="btn-dark">
+          <a onclick="passProjects(3)" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
+          <a href = "https://github.com/Trung28899/Xdelivery" class="btn-dark">
             <i class="fab fa-github"></i> Github
           </a>
         </div>
@@ -130,15 +130,15 @@
           <div class="items">
             <img
               class="itemImage"
-              src="dist/img/projects/project5.jpg"
+              src="dist/img/projects/Designs/1.png"
               alt="project1"
             />
             <p class="projectName">Desgined Posters</p>
             <p class="hoverText">Adobe Photoshop / Canvas </p>
           </div>
 
-          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
-          <a href="#" class="btn-dark">
+          <a href="#" onclick="passProjects(4)" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
+          <a href="https://github.com/Trung28899/Designs" class="btn-dark">
             <i class="fab fa-github"></i> Github
           </a>
         </div>
@@ -148,9 +148,9 @@
         <div class="background"></div>
         <div class="content">
           <div class="images">
-            <img src="dist/img/projects/project1.jpg" alt="" />
-            <a class="prevWork" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="nextWork" onclick="plusSlides(1)">&#10095;</a>
+            <img src="dist/img/projects/project1.png" alt="" id="myImg"/>
+            <a onclick="SlideShow(-1)" class="prevWork">&#10094;</a>
+            <a onclick="SlideShow(1)" class="nextWork">&#10095;</a>
             <div class="gap"></div>
           </div>
           <div class="content-container">
@@ -164,6 +164,7 @@
             <div class="projectDescription">
               <p id="proDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi placeat molestias ut tenetur quia accusamus doloremque maxime suscipit ex eius blanditiis aliquam expedita sed, temporibus natus velit odit enim. Quos!</p>
             </div>
+            
             <a href="#" class="btnView">
               <i class="fas fa-angle-double-right"></i> 
               VIEW SITE

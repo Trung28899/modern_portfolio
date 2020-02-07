@@ -36,6 +36,13 @@
     right: 82%;
   }
 
+  .get-resume{
+    top: 5.5%; 
+    text-align: center;
+    padding-left: 0.6rem;
+    font-weight: bold;
+  }
+
   /*******************************************
   *******************************************
    MY WORK STYLING
@@ -76,9 +83,16 @@
       position: relative;
       top: 0%; 
 
+      .projectName, 
+      .projectBrief, 
+      hr{
+        top: 1%; 
+      }
+
       .projectDescription{
         position: relative;
         font-size: 1.1rem;
+        top: 1%; 
       }
 
       .btnView{
@@ -145,6 +159,10 @@
       width: 150px;
       height: 150px;
     }
+  }
+
+  .get-resume{
+    visibility: hidden;
   }
 
   .about-info {
@@ -238,6 +256,12 @@
       position: relative;
       top: 0%; 
 
+      .projectName, 
+      .projectBrief, 
+      hr{
+        top: 0.2%; 
+      }
+
       .projectName{
         font-size: 1.2rem;
       }
@@ -248,6 +272,7 @@
 
       .projectDescription{
         position: relative;
+        top: 0.2%; 
       }
 
       .btnView{
@@ -281,6 +306,14 @@
 
   .projects {
     grid-template-columns: 1fr;
+    img{
+      height: 12.5rem;
+    }
+
+    .hoverText, 
+    .projectName{
+      top: -9.5rem; 
+    }
   }
 
     //Slideshow styling: 
@@ -321,6 +354,9 @@
       font-size: 0.9rem;
     }
 
+    .get-resume{
+      visibility: hidden;
+    }
 
 /*******************************************
   *******************************************
@@ -343,7 +379,7 @@
 
     .images{
       img{
-        height: 25rem;
+        height: 20rem;
       }
 
       .gap{
@@ -352,9 +388,9 @@
 
       .prevWork, 
       .nextWork{
-        top: 44%; 
-        padding: 10px; 
-        width: 15%;
+        top: 35%; 
+        padding: 8px; 
+        width: 12%;
         font-size: 1.1rem;
       }
     }
@@ -388,7 +424,7 @@
         position: fixed;
         height: 4.5%;
         width: 30%; 
-        font-size: 0.75rem;
+        font-size: 0.65rem;
         top: 91%; 
       }
 
