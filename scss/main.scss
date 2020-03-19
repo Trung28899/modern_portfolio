@@ -441,7 +441,7 @@ source {
   top: 1.5rem;
   position: fixed;
   width: 40%;
-  height: 100%;
+  height: 95%;
   left: 30%;
   z-index: 1;
   top: 0;
@@ -482,7 +482,6 @@ source {
 
     .projectBrief {
       position: relative;
-      font-size: 0.75rem;
       top: -1rem;
       color: #757474;
       font-family: Georgia, serif;
@@ -490,23 +489,24 @@ source {
 
     hr {
       position: relative;
-      top: -1.2rem;
+      top: -1.5rem;
     }
 
     .projectDescription {
       position: relative;
-      top: -1.2rem;
+      top: -2rem;
       color: rgba(0, 0, 0, 0.8);
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       font-weight: bold;
     }
   }
 
   .btnView {
-    position: relative;
-    width: 27.5%;
-    font-size: 0.9rem;
-    bottom: 0.4rem;
+    position: absolute;
+    width: 25%;
+    font-size: 0.75rem;
+    top: 93%;
+    padding: 0.45rem 0;
 
     &:hover {
       background-color: seashell;
@@ -515,10 +515,10 @@ source {
   }
 
   .close-button {
-    position: fixed;
+    position: absolute;
     top: 95%;
     z-index: 3;
-    right: 32%;
+    right: 5%;
     cursor: pointer;
 
     .button-line {
