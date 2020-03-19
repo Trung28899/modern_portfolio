@@ -49,10 +49,11 @@
   *******************************************
   *******************************************/
   .content {
+    position: fixed;
     width: 65%;
     left: 17.5%;
-    height: 65%;
-    top: 18.5%;
+    height: 58%;
+    top: 21%;
 
     &.show {
       animation: mymoveIpadPro 1s ease;
@@ -62,56 +63,30 @@
       animation: mymovecloseIpadPro 1s ease;
     }
 
-    .images {
-      img {
-        height: 35rem;
-      }
-
-      .gap {
-        height: 0.4rem;
-      }
-
-      .prevWork,
-      .nextWork {
-        font-size: 2rem;
-        padding: 20px;
-        top: 53.5%;
-      }
-    }
-
     .content-container {
-      position: relative;
       top: 0%;
 
-      .projectName,
-      .projectBrief,
-      hr {
-        top: 1%;
+      .projectName {
+        position: absolute;
+        top: 60%;
+      }
+
+      .projectBrief {
+        position: absolute;
+        top: 70%;
       }
 
       .projectDescription {
-        position: relative;
-        font-size: 1.1rem;
-        top: 1%;
+        position: absolute;
+        top: 75%;
       }
 
       .btnView {
-        position: relative;
-        top: 1%;
-        height: 10%;
-        width: 25%;
-        padding-top: 0.8rem;
-        padding-left: 1.4rem;
+        position: absolute;
       }
 
       .close-button {
-        position: relative;
-        right: -37rem;
-        top: -1.5rem;
-        .button-line {
-          width: 22px;
-          height: 3px;
-        }
+        position: absolute;
       }
     }
   }
@@ -234,71 +209,44 @@
   *******************************************
   *******************************************/
   .content {
+    position: fixed;
     width: 65%;
     left: 17.5%;
-    height: 70%;
-    top: 15%;
+    height: 58%;
+    top: 21%;
 
     &.show {
-      animation: mymoveIpad 1s ease;
+      animation: mymoveIpadPro 1s ease;
     }
 
-    .images {
-      img {
-        height: 27rem;
-      }
-
-      .gap {
-        height: 0.4rem;
-      }
-
-      .prevWork,
-      .nextWork {
-        top: 51%;
-      }
+    &.close {
+      animation: mymovecloseIpadPro 1s ease;
     }
 
     .content-container {
-      position: relative;
       top: 0%;
 
-      .projectName,
-      .projectBrief,
-      hr {
-        top: 0.2%;
-      }
-
       .projectName {
-        font-size: 1.2rem;
+        position: absolute;
+        top: 60%;
       }
 
       .projectBrief {
-        font-size: 0.9rem;
+        position: absolute;
+        top: 69%;
       }
 
       .projectDescription {
-        position: relative;
-        top: 0.2%;
+        position: absolute;
+        top: 75%;
       }
 
       .btnView {
-        position: relative;
-        height: 10%;
-        width: 30%;
-        top: -3%;
-        font-size: 0.75rem;
+        position: absolute;
       }
 
       .close-button {
-        position: relative;
-        right: -26rem;
-        top: -2.5rem;
-        padding: 0.3rem 0.8rem;
-
-        .button-line {
-          width: 22px;
-          height: 3px;
-        }
+        position: absolute;
       }
     }
   }
@@ -378,84 +326,53 @@
     }
   }
   .content {
+    position: fixed;
     width: 100%;
     height: 100%;
-    left: 0%;
-    top: 0%;
+    top: 0;
+    left: 0;
 
     &.show {
-      animation: mymovePhone 1s ease;
+      animation: mymoveIpadPro 1s ease;
     }
 
     &.close {
-      animation: mymoveclosePhone 1s ease;
-    }
-
-    .images {
-      img {
-        height: 20rem;
-      }
-
-      .gap {
-        height: 0.4rem;
-      }
-
-      .prevWork,
-      .nextWork {
-        top: 35%;
-        padding: 8px;
-        width: 12%;
-        font-size: 1.1rem;
-      }
+      animation: mymovecloseIpadPro 1s ease;
     }
 
     .content-container {
-      position: relative;
       top: 0%;
 
       .projectName {
-        position: relative;
-        font-size: 1rem;
-        top: -9%;
+        top: 45%;
+        left: 0%;
+        width: 100%;
+        text-align: center;
       }
 
       .projectBrief {
-        font-size: 0.75rem;
-        position: relative;
-        top: -9%;
-      }
-
-      hr {
-        top: -9%;
+        position: absolute;
+        top: 53%;
+        left: 0%;
       }
 
       .projectDescription {
-        position: relative;
-        top: -9%;
+        position: absolute;
+        top: 65%;
+        left: 0%;
+        text-align: center;
       }
 
       .btnView {
-        position: fixed;
-        height: 4.5%;
-        width: 30%;
-        font-size: 0.65rem;
-        top: 91%;
+        position: absolute;
       }
 
       .close-button {
-        position: fixed;
-        right: 1%;
-        top: 95%;
-        padding: 0.5rem 0.5rem;
-        font-size: 0.5rem;
-
-        .button-line {
-          width: 22px;
-          height: 3px;
-        }
+        position: absolute;
       }
     }
   }
+
   /*******************************************
   *******************************************
    CONTACT STYLING
