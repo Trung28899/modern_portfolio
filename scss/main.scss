@@ -441,7 +441,7 @@ source {
   top: 1.5rem;
   position: fixed;
   width: 40%;
-  height: 85%;
+  height: 95%;
   left: 30%;
   z-index: 1;
   top: 0;
@@ -503,7 +503,7 @@ source {
     position: absolute;
     width: 25%;
     font-size: 0.75rem;
-    top: 93%;
+    bottom: 0%;
     padding: 0.45rem 0;
 
     &:hover {
@@ -514,7 +514,7 @@ source {
 
   .close-button {
     position: absolute;
-    top: 95%;
+    bottom: 0%;
     z-index: 3;
     right: 5%;
     cursor: pointer;
