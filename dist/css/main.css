@@ -495,11 +495,9 @@ source {
     visibility: visible; }
 
 .content {
-  position: absolute;
-  top: 1.5rem;
   position: fixed;
   width: 40%;
-  height: 95%;
+  height: 90%;
   left: 30%;
   z-index: 1;
   top: 0;
@@ -520,36 +518,38 @@ source {
   .content .content-container {
     margin: 1.5rem 1.5rem; }
     .content .content-container .projectName {
-      position: relative;
+      position: absolute;
       font-weight: bold;
       font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
       color: #333;
-      top: -1.2rem; }
+      top: 62%; }
     .content .content-container .projectBrief {
-      position: relative;
-      top: -1rem;
+      position: absolute;
+      top: 70%;
       color: #757474;
       font-family: Georgia, serif; }
-    .content .content-container hr {
+    .content .content-container hr.new1 {
       position: relative;
-      top: -1.5rem; }
+      margin-top: -18%; }
     .content .content-container .projectDescription {
-      position: relative;
-      top: -2rem;
+      position: absolute;
+      top: 76%;
       color: rgba(0, 0, 0, 0.8);
       font-weight: bold; }
   .content .btnView {
     position: absolute;
     width: 25%;
     font-size: 0.75rem;
-    bottom: 0%;
+    bottom: 1%;
+    left: 3%;
     padding: 0.45rem 0; }
     .content .btnView:hover {
       background-color: seashell;
       color: #db3939; }
   .content .close-button {
     position: absolute;
-    bottom: 0%;
+    bottom: 2%;
+    right: 0%;
     z-index: 3;
     right: 5%;
     cursor: pointer; }
