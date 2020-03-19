@@ -419,16 +419,16 @@ source {
 
 .background {
   position: fixed;
-  width: 100%;
+  width: 60%;
   height: 100%;
-  left: -0.2rem;
+  left: 20%;
   top: 0;
   opacity: 0.7;
   background-color: $primary-color;
   overflow: hidden;
   transition: 0.5s;
   z-index: 0;
-  visibility: hidden;
+  //visibility: hidden;
   @include easeOut;
 
   &.show {
@@ -439,18 +439,17 @@ source {
 .content {
   top: 1.5rem;
   position: fixed;
-  width: 45%;
-  height: 90%;
-  left: 27.5%;
+  height: 100%;
+  left: 0;
   z-index: 1;
   top: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: #f2f2f2;
   transition: 0.5s;
   z-index: 1;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0em;
-  visibility: hidden;
+  //visibility: hidden;
 
   &.show {
     visibility: visible;
@@ -464,24 +463,9 @@ source {
   }
 
   .images {
-    img {
-      position: relative;
-      width: 100%;
-      height: 25rem;
-    }
-
-    .prevWork,
-    .nextWork {
-      @include slideButtons;
-      background-color: rgba(0, 0, 0, 0.8);
-      top: 41%;
-    }
-    .prevWork {
-      left: 0;
-    }
-    .nextWork {
-      right: 0;
-    }
+    position: relative;
+    width: 50%;
+    left: 22.5%; 
 
     .gap {
       position: relative;
@@ -614,14 +598,6 @@ source {
 }
 
 #main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: darken($primary-color, 10);
-  color: set-text-color($primary-color);
-  height: 60px;
-}
-
-#main-footer-work {
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
