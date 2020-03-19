@@ -26,7 +26,7 @@
 
   //About me Experience showcase
   .mySlides img,
-  .mySlides video, 
+  .mySlides video,
   #picture1,
   #video1 {
     height: 35vh;
@@ -36,8 +36,8 @@
     right: 82%;
   }
 
-  .get-resume{
-    top: 5.5%; 
+  .get-resume {
+    top: 5.5%;
     text-align: center;
     padding-left: 0.6rem;
     font-weight: bold;
@@ -48,67 +48,67 @@
    MY WORK STYLING
   *******************************************
   *******************************************/
-  .content{
-    width: 65%; 
-    left: 17.5%; 
+  .content {
+    width: 65%;
+    left: 17.5%;
     height: 65%;
-    top: 18.5%; 
+    top: 18.5%;
 
-    &.show{
-      animation: mymoveIpadPro 1s ease; 
+    &.show {
+      animation: mymoveIpadPro 1s ease;
     }
 
-    &.close{
+    &.close {
       animation: mymovecloseIpadPro 1s ease;
     }
-    
-    .images{
-      img{
+
+    .images {
+      img {
         height: 35rem;
       }
 
-      .gap{
+      .gap {
         height: 0.4rem;
       }
 
-      .prevWork, 
-      .nextWork{
+      .prevWork,
+      .nextWork {
         font-size: 2rem;
-        padding: 20px; 
-        top: 53.5%; 
+        padding: 20px;
+        top: 53.5%;
       }
     }
 
-    .content-container{
+    .content-container {
       position: relative;
-      top: 0%; 
+      top: 0%;
 
-      .projectName, 
-      .projectBrief, 
-      hr{
-        top: 1%; 
+      .projectName,
+      .projectBrief,
+      hr {
+        top: 1%;
       }
 
-      .projectDescription{
+      .projectDescription {
         position: relative;
         font-size: 1.1rem;
-        top: 1%; 
+        top: 1%;
       }
 
-      .btnView{
+      .btnView {
         position: relative;
-        top: 1%; 
+        top: 1%;
         height: 10%;
         width: 25%;
         padding-top: 0.8rem;
         padding-left: 1.4rem;
       }
 
-      .close-button{
+      .close-button {
         position: relative;
         right: -37rem;
-        top: -1.5rem; 
-        .button-line{
+        top: -1.5rem;
+        .button-line {
           width: 22px;
           height: 3px;
         }
@@ -116,6 +116,12 @@
     }
   }
 
+  #main-footer-work {
+    position: absolute;
+    width: 100%;
+    right: 0rem;
+    text-align: center;
+  }
 }
 
 // Tablet and Small Laptops
@@ -139,7 +145,7 @@
       transform: translate3d(0, 0, 0);
     }
 
-    &.close{
+    &.close {
       animation: mymovecloseIpad 1s ease;
     }
   }
@@ -161,7 +167,7 @@
     }
   }
 
-  .get-resume{
+  .get-resume {
     visibility: hidden;
   }
 
@@ -177,7 +183,7 @@
     grid-template-columns: 1fr;
   }
 
-  .more-info{
+  .more-info {
     // see defining template areas in main.scss
     grid-template-areas:
       "experience"
@@ -197,7 +203,7 @@
 
   //about me experience showcase
   .mySlides img,
-  .mySlides video{
+  .mySlides video {
     width: 73%;
     height: 40vh;
     margin-left: -2%;
@@ -218,78 +224,78 @@
     right: 6vw;
   }
 
-  .numbertext{
+  .numbertext {
     padding-left: 7rem;
   }
 
-/*******************************************
+  /*******************************************
   *******************************************
    MY WORK STYLING
   *******************************************
   *******************************************/
-  .content{
-    width: 65%; 
-    left: 17.5%; 
+  .content {
+    width: 65%;
+    left: 17.5%;
     height: 70%;
-    top: 15%; 
+    top: 15%;
 
-    &.show{
-      animation: mymoveIpad 1s ease; 
+    &.show {
+      animation: mymoveIpad 1s ease;
     }
-    
-    .images{
-      img{
+
+    .images {
+      img {
         height: 27rem;
       }
 
-      .gap{
+      .gap {
         height: 0.4rem;
       }
 
-      .prevWork, 
-      .nextWork{
-        top: 51%; 
+      .prevWork,
+      .nextWork {
+        top: 51%;
       }
     }
 
-    .content-container{
+    .content-container {
       position: relative;
-      top: 0%; 
+      top: 0%;
 
-      .projectName, 
-      .projectBrief, 
-      hr{
-        top: 0.2%; 
+      .projectName,
+      .projectBrief,
+      hr {
+        top: 0.2%;
       }
 
-      .projectName{
+      .projectName {
         font-size: 1.2rem;
       }
 
-      .projectBrief{
+      .projectBrief {
         font-size: 0.9rem;
       }
 
-      .projectDescription{
+      .projectDescription {
         position: relative;
-        top: 0.2%; 
+        top: 0.2%;
       }
 
-      .btnView{
+      .btnView {
         position: relative;
         height: 10%;
         width: 30%;
-        top: -3%; 
+        top: -3%;
         font-size: 0.75rem;
       }
 
-      .close-button{
+      .close-button {
         position: relative;
         right: -26rem;
-        top: -2.5rem; 
+        top: -2.5rem;
         padding: 0.3rem 0.8rem;
 
-        .button-line{
+        .button-line {
           width: 22px;
           height: 3px;
         }
@@ -306,157 +312,165 @@
 
   .projects {
     grid-template-columns: 1fr;
-    img{
+    img {
       height: 12.5rem;
     }
 
-    .hoverText, 
-    .projectName{
-      top: -9.5rem; 
+    .hoverText,
+    .projectName {
+      top: -9.5rem;
     }
   }
 
-    //Slideshow styling: 
-    .mySlides img,
-    .mySlides video{
-      width: 120%;
-      height: 32vh;
-      margin-left: -10%;
-    }
-  
-    #picture1,
-    #video1 {
-      width: 130%;
-      height: 32vh;
-      margin-left: -15%;
-    }
-  
-    .prev {
-      right: 100%;
-      font-size: 1rem;
-      padding: 0.5rem; 
-      top: 48%
-    }
-  
-    .next {
-      right: -10%;
-      font-size: 1rem ;
-      padding: 0.5rem;
-      top: 48%; 
-    }
-  
-    .numbertext{
-      padding-left: 0rem;
-    } 
+  //Slideshow styling:
+  .mySlides img,
+  .mySlides video {
+    width: 120%;
+    height: 32vh;
+    margin-left: -10%;
+  }
 
-    .text{
-      bottom: -18%; 
-      font-size: 0.9rem;
-    }
+  #picture1,
+  #video1 {
+    width: 130%;
+    height: 32vh;
+    margin-left: -15%;
+  }
 
-    .get-resume{
-      visibility: hidden;
-    }
+  .prev {
+    right: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    top: 48%;
+  }
 
-/*******************************************
+  .next {
+    right: -10%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    top: 48%;
+  }
+
+  .numbertext {
+    padding-left: 0rem;
+  }
+
+  .text {
+    bottom: -18%;
+    font-size: 0.9rem;
+  }
+
+  .get-resume {
+    visibility: hidden;
+  }
+
+  /*******************************************
   *******************************************
    MY WORK STYLING
   *******************************************
   *******************************************/
-  .content{
-    width: 100%;  
-    height: 100%; 
+  .projects {
+    .hoverText {
+      top: -8.5rem;
+    }
+    .projectName {
+      top: -8.5rem;
+    }
+  }
+  .content {
+    width: 100%;
+    height: 100%;
     left: 0%;
     top: 0%;
 
-    &.show{
-      animation: mymovePhone 1s ease; 
+    &.show {
+      animation: mymovePhone 1s ease;
     }
-  
-    &.close{
+
+    &.close {
       animation: mymoveclosePhone 1s ease;
     }
 
-    .images{
-      img{
+    .images {
+      img {
         height: 20rem;
       }
 
-      .gap{
+      .gap {
         height: 0.4rem;
       }
 
-      .prevWork, 
-      .nextWork{
-        top: 35%; 
-        padding: 8px; 
+      .prevWork,
+      .nextWork {
+        top: 35%;
+        padding: 8px;
         width: 12%;
         font-size: 1.1rem;
       }
     }
 
-    .content-container{
+    .content-container {
       position: relative;
-      top: 0%; 
+      top: 0%;
 
-      .projectName{
+      .projectName {
         position: relative;
         font-size: 1rem;
-        top: -9%; 
+        top: -9%;
       }
 
-      .projectBrief{
+      .projectBrief {
         font-size: 0.75rem;
         position: relative;
-        top: -9%; 
+        top: -9%;
       }
 
-      hr{
-        top: -9%; 
+      hr {
+        top: -9%;
       }
 
-      .projectDescription{
+      .projectDescription {
         position: relative;
-        top: -9%; 
+        top: -9%;
       }
 
-      .btnView{
+      .btnView {
         position: fixed;
         height: 4.5%;
-        width: 30%; 
+        width: 30%;
         font-size: 0.65rem;
-        top: 91%; 
+        top: 91%;
       }
 
-      .close-button{
+      .close-button {
         position: fixed;
         right: 1%;
-        top: 95%; 
+        top: 95%;
         padding: 0.5rem 0.5rem;
         font-size: 0.5rem;
-        
-        .button-line{
+
+        .button-line {
           width: 22px;
           height: 3px;
         }
       }
     }
   }
-/*******************************************
+  /*******************************************
   *******************************************
    CONTACT STYLING
   *******************************************
   *******************************************/
-  #contact{
-    .lg-heading{
+  #contact {
+    .lg-heading {
       position: relative;
       right: 5%;
       font-size: 5rem;
     }
   }
 
-  .boxes{
-    div{
+  .boxes {
+    div {
       font-size: 1.2rem;
     }
   }

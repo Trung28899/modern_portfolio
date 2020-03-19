@@ -175,7 +175,9 @@ h3 {
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
+    font-size: 1.5rem;
     margin-bottom: 2rem;
+    margin-top: 1rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }
 
@@ -192,6 +194,9 @@ header {
   width: 100%; }
 
 .text-secondary {
+  color: #eece1a; }
+
+.text-secondary-span {
   color: #eece1a; }
 
 .title {
@@ -220,13 +225,13 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .more-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
@@ -430,7 +435,7 @@ source {
   grid-template-columns: repeat(3, 1fr); }
   .projects .hoverText {
     position: relative;
-    top: -11rem;
+    top: -10rem;
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
@@ -445,7 +450,7 @@ source {
     border: 0;
     margin-bottom: 0.3rem;
     position: relative;
-    top: -11rem;
+    top: -10rem;
     font-size: 1.2rem;
     text-align: center;
     font-weight: bold;
@@ -458,15 +463,17 @@ source {
     border-color: #eece1a;
     transition: all 0.35s ease-out; }
   .projects .btn-dark {
+    text-decoration: none;
     background: black;
     color: #fff;
     position: relative;
-    top: -20%; }
+    top: -16%; }
   .projects .btn-light {
+    text-decoration: none;
     background: #c4c4c4;
     color: #333;
     position: relative;
-    top: -20%; }
+    top: -16%; }
   .projects img {
     width: 100%;
     height: 15rem;
@@ -634,6 +641,13 @@ source {
   color: #fff;
   height: 60px; }
 
+#main-footer-work {
+  text-align: center;
+  padding: 1rem;
+  background: #2b2b2b;
+  color: #fff;
+  height: 60px; }
+
 @media screen and (min-width: 1441px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }
@@ -708,7 +722,12 @@ source {
         top: -1.5rem; }
         .content .content-container .close-button .button-line {
           width: 22px;
-          height: 3px; } }
+          height: 3px; }
+  #main-footer-work {
+    position: absolute;
+    width: 100%;
+    right: 0rem;
+    text-align: center; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -743,10 +762,10 @@ source {
   .get-resume {
     visibility: hidden; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .more-info {
-    grid-template-areas: "experience" "job1" "job2" "job3";
+    grid-template-areas: "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .sectionName {
     margin-top: 2rem; }
@@ -858,6 +877,10 @@ source {
    MY WORK STYLING
   *******************************************
   *******************************************/
+  .projects .hoverText {
+    top: -8.5rem; }
+  .projects .projectName {
+    top: -8.5rem; }
   .content {
     width: 100%;
     height: 100%;
