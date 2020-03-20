@@ -225,13 +225,13 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .more-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
@@ -541,7 +541,7 @@ source {
     font-size: 0.75rem;
     bottom: 1%;
     left: 3%;
-    padding: 0.45rem 0; }
+    padding: 0.5rem 0rem; }
     .content .btnView:hover {
       background-color: seashell;
       color: #db3939; }
@@ -699,10 +699,10 @@ source {
   .get-resume {
     visibility: hidden; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .more-info {
-    grid-template-areas: "experience" "job1" "job2" "job3";
+    grid-template-areas: "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .sectionName {
     margin-top: 2rem; }
@@ -820,15 +820,18 @@ source {
         text-align: center; }
       .content .content-container .projectBrief {
         position: absolute;
-        top: 53%;
-        left: 0%; }
+        top: 52%;
+        left: 0%;
+        width: 100%;
+        text-align: center; }
       .content .content-container .projectDescription {
         position: absolute;
         top: 65%;
         left: 0%;
         text-align: center; }
       .content .content-container .btnView {
-        position: absolute; }
+        position: absolute;
+        width: 30%; }
       .content .content-container .close-button {
         position: absolute; }
   /*******************************************

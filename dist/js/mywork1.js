@@ -88,44 +88,43 @@ class Project {
 
 // Declaring images array
 const SmartMirror = [
-  "dist/img/projects/SmartMirror/screen1.png",
-  "dist/img/projects/SmartMirror/screen2.png",
-  "dist/img/projects/SmartMirror/screen3.png",
-  "dist/img/projects/SmartMirror/screen4.png",
-  "dist/img/projects/SmartMirror/screen5.png",
-  "dist/img/projects/SmartMirror/screen6.png"
+  "dist/img/SmartMirrorscreen1.png",
+  "dist/img/SmartMirrorscreen2.png",
+  "dist/img/SmartMirrorscreen3.png",
+  "dist/img/SmartMirrorscreen4.png",
+  "dist/img/SmartMirrorscreen5.png",
+  "dist/img/SmartMirrorscreen6.png"
 ];
 
 const PizzaOrder = [
-  "dist/img/projects/PizzaOrder/screen1.png",
-  "dist/img/projects/PizzaOrder/screen2.png",
-  "dist/img/projects/PizzaOrder/screen3.png",
-  "dist/img/projects/PizzaOrder/screen4.png"
+  "dist/img/PizzaOrderscreen1.png",
+  "dist/img/PizzaOrderscreen2.png",
+  "dist/img/PizzaOrderscreen3.png",
+  "dist/img/PizzaOrderscreen4.png"
 ];
 
 const Portfolio = [
-  "dist/img/projects/portfolio/screen1.png",
-  "dist/img/projects/portfolio/screen2.png",
-  "dist/img/projects/portfolio/screen3.png",
-  "dist/img/projects/portfolio/screen4.png"
+  "dist/img/portfolioscreen1.png",
+  "dist/img/portfolioscreen2.png",
+  "dist/img/portfolioscreen3.png",
+  "dist/img/portfolioscreen4.png"
 ];
 
 const Xdelivery = [
-  "dist/img/projects/Xdelivery/screen1.png",
-  "dist/img/projects/Xdelivery/screen2.png",
-  "dist/img/projects/Xdelivery/screen3.png"
+  "dist/img/Xdeliveryscreen1.png",
+  "dist/img/Xdeliveryscreen2.png",
+  "dist/img/Xdeliveryscreen3.png"
 ];
 
 const Designs = [
-  "dist/img/projects/Designs/1.png",
-  "dist/img/projects/Designs/2.png",
-  "dist/img/projects/Designs/3.png",
-  "dist/img/projects/Designs/4.png",
-  "dist/img/projects/Designs/5.png",
-  "dist/img/projects/Designs/6.png",
-  "dist/img/projects/Designs/7.png",
-  "dist/img/projects/Designs/8.png",
-  "dist/img/projects/Designs/9.png"
+  "dist/img/Designs1.png",
+  "dist/img/Designs2.png",
+  "dist/img/Designs3.png",
+  "dist/img/Designs4.png",
+  "dist/img/Designs5.png",
+  "dist/img/Designs6.png",
+  "dist/img/Designs7.png",
+  "dist/img/Designs8.png"
 ];
 
 // Declaring project array
@@ -180,6 +179,7 @@ const proBrief = document.getElementById("proBrief");
 const proDescription = document.getElementById("proDescription");
 const ViewSite = document.querySelector(".btnView");
 const imageShow = document.querySelectorAll(".myImg");
+const slideShowCarousel = document.querySelector(".carousel-inner");
 var counter = 0;
 
 closeBtn.addEventListener("click", closeWork);
@@ -193,10 +193,23 @@ function passProjects(number) {
   proName.innerHTML = projects[number].getName();
   proBrief.innerHTML = projects[number].getBrief();
   proDescription.innerHTML = projects[number].getDesc();
-  //imageShow.src = projects[number].images[0];
+  imageShow[0].src = projects[number].images[0];
+  imageShow[1].src = projects[number].images[1];
+  imageShow[2].src = projects[number].images[2];
 
   if (projects[number].images.length > 3) {
-    console.log(imageShow);
+
+    for(var i = 2; i< (projects[number].images.length); i++){
+      var para = document.createElement("div");
+      var paraImg = document.createElement("img");
+      para.classList.add("carousel-item"); 
+      paraImg.classList.add('d-block');
+      paraImg.classList.add('w-100'); 
+      paraImg.classList.add('myImg');
+      paraImg.src = projects[number].images[i]; 
+
+      slideShowCarousel.appendChild(para).appendChild(paraImg);
+    }
   }
 
   if (number == 0 || number == 1 || number == 4) {
@@ -216,6 +229,8 @@ function closeWork() {
   contentView.classList.add("close");
   backgroundView.classList.remove("show");
   contentView.classList.remove("show");
+
+  window.location.href = "work1.html"; 
 
   counter = 0;
 }

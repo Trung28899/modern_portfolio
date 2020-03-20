@@ -352,8 +352,10 @@
 
       .projectBrief {
         position: absolute;
-        top: 53%;
+        top: 52%;
         left: 0%;
+        width: 100%;
+        text-align: center;
       }
 
       .projectDescription {
@@ -365,6 +367,7 @@
 
       .btnView {
         position: absolute;
+        width: 30%; 
       }
 
       .close-button {
