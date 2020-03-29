@@ -36,13 +36,6 @@
     right: 82%;
   }
 
-  .get-resume {
-    top: 5.5%;
-    text-align: center;
-    padding-left: 0.6rem;
-    font-weight: bold;
-  }
-
   /*******************************************
   *******************************************
    MY WORK STYLING
@@ -142,7 +135,7 @@
     }
   }
 
-  .get-resume {
+  .resume {
     visibility: hidden;
   }
 
@@ -367,7 +360,7 @@
 
       .btnView {
         position: absolute;
-        width: 30%; 
+        width: 30%;
       }
 
       .close-button {

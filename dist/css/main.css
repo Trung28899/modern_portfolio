@@ -199,8 +199,14 @@ header {
 .text-secondary-span {
   color: #eece1a; }
 
+.text-secondary-bio {
+  color: #eece1a;
+  margin-bottom: 1rem;
+  font-size: 1.4rem; }
+
 .title {
-  margin-top: 3.4rem; }
+  margin-top: 3rem;
+  color: #eece1a; }
 
 main {
   padding: 4rem;
@@ -222,16 +228,24 @@ main {
  * STYLING FOR ABOUT ME PAGE *
 ********************************************************
 ********************************************************/
+.buttonResume {
+  position: absolute;
+  top: 5.5rem;
+  right: 8rem; }
+
+.resume {
+  width: 8rem; }
+
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .more-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
@@ -270,6 +284,9 @@ main {
   padding: 0.5rem;
   border-bottom: #eece1a 5px solid;
   text-align: center; }
+  .job .companyName,
+  .achieve .companyName {
+    font-size: 1.2rem; }
 
 .textSection h3 {
   padding-top: 5rem;
@@ -378,24 +395,6 @@ source {
   background-color: #717171; }
 
 /* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s; }
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4; }
-  to {
-    opacity: 1; } }
-
-@keyframes fade {
-  from {
-    opacity: 0.4; }
-  to {
-    opacity: 1; } }
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev,
@@ -404,26 +403,6 @@ source {
     font-size: 11px; } }
 
 /* SHOWCASE IMAGE STYLING ENDS */
-.get-resume {
-  position: absolute;
-  display: block;
-  padding: 0.5rem 0.5rem;
-  padding-left: 1rem;
-  width: 9%;
-  top: 12%;
-  right: 10%;
-  background-color: #db3939;
-  color: seashell;
-  margin-top: 1.5rem;
-  margin-left: -0.3rem;
-  font-family: Georgia, serif;
-  animation: mymoveIpad 1s ease;
-  font-weight: bold;
-  transition: all 0.35s ease-out; }
-  .get-resume:hover {
-    background-color: seashell;
-    color: #db3939; }
-
 /*******************************************************
  * *****************************************************
  * STYLING FOR MY WORK PAGE*
@@ -625,11 +604,6 @@ source {
     height: 35vh; }
   .prev {
     right: 82%; }
-  .get-resume {
-    top: 5.5%;
-    text-align: center;
-    padding-left: 0.6rem;
-    font-weight: bold; }
   /*******************************************
   *******************************************
    MY WORK STYLING
@@ -696,13 +670,13 @@ source {
       background-size: 150px;
       width: 150px;
       height: 150px; }
-  .get-resume {
+  .resume {
     visibility: hidden; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .more-info {
-    grid-template-areas: "experience" "job1" "job2" "job3";
+    grid-template-areas: "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .sectionName {
     margin-top: 2rem; }

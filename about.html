@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="dist/css/main.css" />
-    <title>About Me</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-  </head>
 
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <title>About Me</title>
+  </head>
   <body>
     <div class="overlay"></div>
     <header>
@@ -33,12 +41,12 @@
               Home
             </a>
           </li>
-          <li class="nav-item current">
+          <li class="nav-item">
             <a href="about.html" class="nav-link">
               About Me
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item current">
             <a href="work.html" class="nav-link">
               My Work
             </a>
@@ -53,45 +61,124 @@
     </header>
 
     <main id="about">
-      <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
-      <h2 class="sm-heading">
-        Let me tell you a few things...
-      </h2>
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="lg-heading">
+            About <span class="text-secondary-span">Me</span>
+          </h1>
+        </div>
+        <div class="buttonResume">
+          <a href="Resume.docx" class="resume font-weight-bold btn btn-danger"
+            >Get <br />
+            Resume</a
+          >
+        </div>
+      </div>
+      <!--End div class = row-->
+      <div class="row">
+        <div class="col-12">
+          <h2 class="sm-heading">
+            Let me tell you a few things...
+          </h2>
+        </div>
+      </div>
+      <!--End div class = row-->
 
       <div class="about-info">
         <img src="dist/img/portrait.png" alt="Trung Trinh" class="bio-image" />
 
         <div class="bio">
-          <h3 class="text-secondary">
+          <h3 class="text-secondary-bio">
             BIO
           </h3>
           <p>
-            I am a passionate Computer Engineer Technology student who always
-            excited in programming and solving real world problems. Has a
-            genuine curiosity in technology, leadership and economy Has a great
-            experience writing code in Java and C programming language. I has
+            I am a passionate Developer who always excited in programming and
+            developing software solution for real world application. Has a great
+            experience writing code in JavaScript, Java and PHP. I has
             experienced developing android application using Android studio
-            along with good command in HTML, CSS, Javascript, PHP, SQL, Assembly
-            language and Shell Scripting. Knowledgeable in data bases,
-            networking technology and embedded system A quick learner and highly
-            motivated individual. Self-taught coder with strong work-ethic.
+            along with good command Front End developer technologies (HTML5,
+            CSS3, SASS, Bootstrap, ReactJS). Knowledgeable in data bases,
+            networking technology and embedded system. I am a quick learner and
+            highly motivated individual. Self-taught coder with strong
+            work-ethic.
           </p>
         </div>
+        <!--End div class = bio-->
 
-        <div class="sectionName">
+        <div class="sectionName" data-aos="fade-right">
           <h3>EXPERIENCE</h3>
           <hr class="hr1" />
         </div>
 
-        <div class="job job-1">
+        <div class="job job-1" data-aos="fade-up">
+          <h3 class="companyName">
+            VERIFONE HOLDING, INC
+          </h3>
+          <h6>
+            <p class="title">
+              TECHNICAL SUPPORT SPECIALIST, TIER 2
+            </p>
+            <p class="time">
+              MAY.2019 – MARCH.2020
+            </p>
+          </h6>
+          <p>
+            ● Configured and Troubleshoot Verifone Systems in Petro Stations
+            (PIN Pads, Routers, POS, Scanner, Printer, Pump system troubleshoot,
+            Sales Report Configuration, etc…)
+          </p>
+          <p>
+            ● Implemented Linux commands to update Station’s databases and
+            monitor the system statuses
+          </p>
+          <p>
+            ● Generated and Logged Reports to Team Lead and Tier 3 Technician
+            for Future Reference
+          </p>
+        </div>
+        <!--End div job-1-->
+
+        <div class="job job-2" data-aos="fade-up">
+          <h3 class="companyName">
+            THO DIA TORONTO GO MARKETING AND ENTERTAINMENT SOLUTION INC
+          </h3>
+          <h6>
+            <p class="title">
+              CONTENT EDITOR & POSTER DESIGNER (FREELANCER)
+            </p>
+            <p class="time">
+              FEBRUARY.2018 – MAY.2018
+            </p>
+          </h6>
+          <p>
+            ● Developed articles about study abroad life, Secondary and
+            Post-Secondary education in Canada
+          </p>
+          <p>
+            ● Perfected articles’ content to ensure articles’ quality
+          </p>
+          <p>
+            ● Published articles on company’s public website and social media
+            pages to promote company image
+          </p>
+          <p>
+            ● Designed posters for articles and company events (mostly talk-show
+            events) on Adobe Photoshop
+          </p>
+        </div>
+        <!--End div job-2-->
+
+        <div class="job job-3" data-aos="fade-up">
           <h3 class="companyName">
             TUTOR DOCTOR
           </h3>
           <h6>
-            <p class="text-secondary title">
+            <p class="title">
               CALCULUS, STATISTIC & CHEMISTRY TUTOR
             </p>
-            NOVEMBER.2017 – SEPTEMBER.2018
+            <p class="time">
+              NOVEMBER.2017 – SEPTEMBER.2018
+            </p>
           </h6>
           <p>
             ● Examined students’ levels in Math and Chemistry
@@ -104,98 +191,51 @@
             Secondary students.
           </p>
         </div>
-
-        <div class="job job-2">
-          <h3 class="companyName">
-            THO DIA TORONTO GO MARKETING AND ENTERTAINMENT SOLUTION INC
-          </h3>
-          <h6>
-            <p class="text-secondary">
-              CONTENT EDITOR & POSTER DESIGNER (FREELANCER)
-            </p>
-            FEBRUARY.2018 – MAY.2018
-          </h6>
-          <p>
-            ● Wrote articles about study abroad life, Secondary and
-            Post-Secondary education in Canada
-          </p>
-          <p>
-            ● Edited articles’ content to ensure articles’ quality
-          </p>
-          <p>
-            ● Published articles on company’s public website and social media
-            pages to promote company image
-          </p>
-          <p>
-            ● Designed posters for articles and company events (mostly talk-show
-            events) on Adobe Photoshop
-          </p>
-        </div>
-
-        <div class="job job-3">
-          <h3 class="companyName">
-            VERIFONE HOLDING, INC
-          </h3>
-          <h6>
-            <p class="text-secondary title">
-              TECHNICAL SUPPORT SPECIALIST, TIER 2
-            </p>
-            MAY.2019 – PRESENT
-          </h6>
-          <p>
-            ● Configure and Troubleshoot Verifone Systems in Petro Stations
-            Including: Routers, POS (Point Of Sales), Systems Controller,
-            PINPAd, Pumps Configurations, etc...
-          </p>
-          <p>
-            ● Write Report to Lead and Tier 3 Technician for Future Reference
-          </p>
-          <p>
-            ● Customer Service for Petro Station's Bussiness owner and Employees
-          </p>
-          <p>
-            ● Work with third party Internet Service Provider, Pump Provider and
-            Payment Network Provider to solve Cusomer's Technical Issues
-          </p>
-        </div>
+        <!--End div job-3-->
       </div>
+      <!--End div class = about-info-->
 
       <br />
       <br />
       <br />
 
       <div class="more-info">
-        <div class="sectionName">
+        <div class="sectionName" data-aos="fade-right">
           <h3>ACHIEVEMENT, VOLUNTEER OR LEADERSHIP</h3>
           <hr class="hr1" />
         </div>
 
-        <div class="achieve achieve-1">
+        <div class="achieve achieve-1" data-aos="fade-up">
           <h3 class="companyName">
             HUMBER IEEE 1ST HACKATHON
           </h3>
           <h6>
-            <p class="text-secondary">
+            <p class="title">
               FIRST PLACE WINNER, SENIOR CHAMPION TEAM
             </p>
-            11st May, 2019 <br />
-            HUMBER COLLEGE NORTH CAMPUS, TORONTO, ON, CANADA
+            <p class="time">
+              11st May, 2019 <br />
+              HUMBER COLLEGE NORTH CAMPUS, TORONTO, ON, CANADA
+            </p>
           </h6>
           <p>
             ● Participated and Won the First Humber Hackathon Competition
           </p>
         </div>
+        <!--achieve 1 End here-->
 
-        <div class="achieve achieve-2">
+        <div class="achieve achieve-2" data-aos="fade-up">
           <h3 class="companyName">
             THODIA CANADA TALKSHOW
           </h3>
           <h6>
-            <p class="text-secondary">
+            <p class="title">
               GUESS SPEAKER
             </p>
-            5th May, 2018 <br />
-            HANOI, VIETNAM
+            <p class="time">
+              5th May, 2018 <br />
+              HANOI, VIETNAM
+            </p>
           </h6>
           <p>
             ● Spoke about application process to study abroad to Vietnamese
@@ -207,71 +247,70 @@
             to new language and culture
           </p>
         </div>
+        <!--achieve 2 End here-->
 
-        <div class="achieve achieve-3">
+        <div class="achieve achieve-3" data-aos="fade-up">
           <h3 class="companyName">
-            YOUTH TRANSITION PROGRAM
+            HUMBER OPEN HOUSE 2018
           </h3>
           <h6>
-            <p class="text-secondary">
-              MENTOR
+            <p class="title">
+              STUDENT AMBASSADOR
             </p>
-            FEBRUARY.2018 - APRIL.2018 <br />
-            HUMER COLLEGE NORTH CAMPUS, TORONTO, ON, CANADA
+            <p class="time">
+              17TH NOVEMBER.2018 <br />
+              HUMER COLLEGE NORTH CAMPUS, TORONTO, ON, CANADA
+            </p>
           </h6>
           <p>
-            ● Conducted and organize discussion sessions for adult participants
-            who interested in post-secondary education and had problems choosing
-            post-secondary programs
-          </p>
-          <p>
-            ● Listened to participants’ goals, plans, obstacles toward getting
-            post-secondary education
-          </p>
-          <p>
-            ● Gave advices on available programs and services that suitable for
-            every individual
+            ● Gave tour guide and personal advices for parents and students who
+            were interested in Humber College
           </p>
         </div>
+        <!--achieve 3 End here-->
       </div>
+      <!--div class more-info end here-->
 
-      <div class="textSection">
+      <div class="textSection" data-aos="zoom-in">
         <h3>EXPERIENCE SHOWCASE</h3>
       </div>
 
-      <div class="slideshow-container">
-
-        <div class="mySlides fade">
+      <div class="slideshow-container" data-aos="zoom-in-up">
+        <div class="mySlides">
           <div class="numbertext">1 / 4</div>
           <img src="dist/img/pic3.jpg" />
           <div class="text">Candidates of The First Humber IEEE Hackathon</div>
         </div>
 
-        <div class="mySlides fade">
+        <div class="mySlides">
           <div class="numbertext">2 / 4</div>
           <img src="dist/img/pic2.jpg" />
-          <div class="text">Senior Champion Team of The First Humber IEEE Hackathon</div>
+          <div class="text">
+            Senior Champion Team of The First Humber IEEE Hackathon
+          </div>
         </div>
 
-        <div class="mySlides fade">
+        <div class="mySlides">
           <div class="numbertext">3 / 4</div>
           <img src="dist/img/pic1.jpg" id="picture1" />
           <div class="text">Talking as a Guess Speaker In a Talkshow</div>
         </div>
 
-        <div class="mySlides fade">
+        <div class="mySlides">
           <div class="numbertext">4 / 4</div>
           <video id="video1" controls>
             <source src="dist/img/video.mp4" type="video/mp4" />
           </video>
-          <div class="text">Video of The TalkShow That I was Involved as a Guest Speaker</div>
+          <div class="text">
+            Video of The TalkShow That I was Involved as a Guest Speaker
+          </div>
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
       <br />
-      <br>
+      <br />
 
       <div style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
@@ -279,16 +318,35 @@
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
       </div>
-
-      <a href="Resume.docx" class="get-resume">
-        Get Résumé
-      </a>
     </main>
 
     <footer id="main-footer">
       Copyright &copy; 2020
     </footer>
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init({
+        duration: 1200
+      });
+    </script>
     <script src="dist/js/main.js"></script>
   </body>
 </html>

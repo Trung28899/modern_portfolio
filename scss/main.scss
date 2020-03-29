@@ -61,8 +61,15 @@ header {
   color: $secondary-color;
 }
 
+.text-secondary-bio {
+  color: $secondary-color;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
 .title {
-  margin-top: 3.4rem;
+  margin-top: 3rem;
+  color: $secondary-color;
 }
 
 main {
@@ -99,6 +106,16 @@ main {
  * STYLING FOR ABOUT ME PAGE *
 ********************************************************
 ********************************************************/
+.buttonResume {
+  position: absolute;
+  top: 5.5rem;
+  right: 8rem;
+}
+
+.resume {
+  width: 8rem;
+}
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -169,6 +186,9 @@ main {
   padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
   text-align: center;
+  .companyName {
+    font-size: 1.2rem;
+  }
 }
 
 // EXPERIENCE SHOWCASE
@@ -286,30 +306,6 @@ source {
 }
 
 /* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -320,29 +316,6 @@ source {
   }
 }
 /* SHOWCASE IMAGE STYLING ENDS */
-
-.get-resume {
-  position: absolute;
-  display: block;
-  padding: 0.5rem 0.5rem;
-  padding-left: 1rem;
-  width: 9%;
-  top: 12%;
-  right: 10%;
-  background-color: rgb(219, 57, 57);
-  color: seashell;
-  margin-top: 1.5rem;
-  margin-left: -0.3rem;
-  font-family: Georgia, serif;
-  animation: mymoveIpad 1s ease;
-  font-weight: bold;
-  @include easeOut;
-
-  &:hover {
-    background-color: seashell;
-    color: rgb(219, 57, 57);
-  }
-}
 
 /*******************************************************
  * *****************************************************
