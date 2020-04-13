@@ -239,13 +239,13 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio" "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .more-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "experience experience experience" "job1 job2 job3";
+  grid-template-areas: "experience experience experience" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
 
 .bio-image {
@@ -677,10 +677,10 @@ source {
   .resume {
     visibility: hidden; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
+    grid-template-areas: "bioimage" "bio" "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .more-info {
-    grid-template-areas: "experience" "job1" "job2" "job3";
+    grid-template-areas: "experience" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .sectionName {
     margin-top: 2rem; }
@@ -798,7 +798,7 @@ source {
         text-align: center; }
       .content .content-container .projectBrief {
         position: absolute;
-        top: 52%;
+        top: 60%;
         left: 0%;
         width: 100%;
         text-align: center; }
