@@ -141,7 +141,7 @@ projects[0] = new Project(
   6,
   "New Roofing Website",
   "HTML5 / Bootstrap / PHP / MySQL",
-  "Most of the designs here were made when I was freelancing for a Toronto based marketing company - Tho Dia Canada. My role was a Poster Designer and Content Creator about Immigration and mostly Studying Aboard in Canada.",
+  "New Roofing is a freelance website that I made for a roofing company based in Toronto. I designed and hosted the website with a connected MySQL database using PHP scrip and mail service for the site using PHP script. ",
   "http://thenewroofing.ca/"
 );
 
@@ -175,9 +175,9 @@ projects[3] = new Project(
 projects[4] = new Project(
   Account,
   6,
-  "Account and Password App",
+  "Account and Password",
   "Android Studio / XML / Java",
-  "Most of the designs here were made when I was freelancing for a Toronto based marketing company - Tho Dia Canada. My role was a Poster Designer and Content Creator about Immigration and mostly Studying Aboard in Canada.",
+  "Account and Password is an android application. This is a personal project that I created to store all my password and username of many online platforms with additional information. ",
   "https://github.com/Trung28899/AccountAndPassApp"
 );
 
@@ -262,11 +262,11 @@ function closeWork() {
   if (moreThanThree) {
     for (var i = 0; i < arrayLength; i++) {
       var index = arrayLength - 1 - i;
-      console.log(para[index]);
+      //console.log(para[index]);
       slideShowCarousel.removeChild(para[index]);
       // have to remove the index for further usage of para array
       para.pop();
-      console.log(para[index]);
+      //console.log(para[index]);
     }
     moreThanThree = false;
   }
