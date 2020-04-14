@@ -24,7 +24,7 @@ function toggleMenu() {
     menuNav.classList.add("show");
     menuBranding.classList.add("show");
 
-    navItems.forEach(item => item.classList.add("show"));
+    navItems.forEach((item) => item.classList.add("show"));
 
     // Set menu States
     showMenu = true;
@@ -35,7 +35,7 @@ function toggleMenu() {
     menuNav.classList.remove("show");
     menuBranding.classList.remove("show");
 
-    navItems.forEach(item => item.classList.remove("show"));
+    navItems.forEach((item) => item.classList.remove("show"));
 
     // Set menu States
     showMenu = false;
@@ -93,37 +93,37 @@ const SmartMirror = [
   "dist/img/SmartMirrorscreen3.png",
   "dist/img/SmartMirrorscreen4.png",
   "dist/img/SmartMirrorscreen5.png",
-  "dist/img/SmartMirrorscreen6.png"
+  "dist/img/SmartMirrorscreen6.png",
 ];
 
 const PizzaOrder = [
   "dist/img/PizzaOrderscreen1.png",
   "dist/img/PizzaOrderscreen2.png",
   "dist/img/PizzaOrderscreen3.png",
-  "dist/img/PizzaOrderscreen4.png"
+  "dist/img/PizzaOrderscreen4.png",
 ];
 
 const Portfolio = [
   "dist/img/portfolioscreen1.png",
   "dist/img/portfolioscreen2.png",
   "dist/img/portfolioscreen3.png",
-  "dist/img/portfolioscreen4.png"
+  "dist/img/portfolioscreen4.png",
 ];
 
 const Xdelivery = [
   "dist/img/Xdeliveryscreen1.png",
   "dist/img/Xdeliveryscreen2.png",
-  "dist/img/Xdeliveryscreen3.png"
+  "dist/img/Xdeliveryscreen3.png",
 ];
 
 const Roof = [
-  "dist/img/roof1.png", 
-  "dist/img/roof2.png", 
-  "dist/img/roof3.png", 
-  "dist/img/roof4.png", 
-  "dist/img/roof5.png", 
-  "dist/img/roof6.png"
-]; 
+  "dist/img/roof1.png",
+  "dist/img/roof2.png",
+  "dist/img/roof3.png",
+  "dist/img/roof4.png",
+  "dist/img/roof5.png",
+  "dist/img/roof6.png",
+];
 
 const Account = [
   "dist/img/account1.png",
@@ -131,7 +131,7 @@ const Account = [
   "dist/img/account3.png",
   "dist/img/account4.png",
   "dist/img/account5.png",
-  "dist/img/account6.png"
+  "dist/img/account6.png",
 ];
 
 // Declaring project array
@@ -201,9 +201,9 @@ const ViewSite = document.querySelector(".btnView");
 const imageShow = document.querySelectorAll(".myImg");
 const slideShowCarousel = document.querySelector(".carousel-inner");
 var moreThanThree = false;
-var para = []; 
-var paraImg = []; 
-var count = 0; 
+var para = [];
+var paraImg = [];
+var count = 0;
 
 closeBtn.addEventListener("click", closeWork);
 ViewSite.addEventListener("click", viewSiteFunc);
@@ -220,11 +220,10 @@ function passProjects(number) {
   imageShow[1].src = projects[number].images[1];
   imageShow[2].src = projects[number].images[2];
 
-
   if (projects[number].imageAmount > 3) {
     moreThanThree = true;
-    var counter = 0; 
-    for (var i = 3 ; i < projects[number].imageAmount; i++) {
+    var counter = 0;
+    for (var i = 3; i < projects[number].imageAmount; i++) {
       paraImg[counter] = document.createElement("img");
       para[counter] = document.createElement("div");
       para[counter].classList.add("carousel-item");
@@ -233,8 +232,10 @@ function passProjects(number) {
       paraImg[counter].classList.add("myImg");
       paraImg[counter].src = projects[number].images[i];
 
-      slideShowCarousel.appendChild(para[counter]).appendChild(paraImg[counter]);
-      counter++; 
+      slideShowCarousel
+        .appendChild(para[counter])
+        .appendChild(paraImg[counter]);
+      counter++;
     }
   }
 
@@ -255,27 +256,27 @@ function closeWork() {
   contentView.classList.add("close");
   backgroundView.classList.remove("show");
   contentView.classList.remove("show");
-  var arrayLength = para.length; 
+  var arrayLength = para.length;
   count++;
 
   if (moreThanThree) {
-    for(var i = 0; i<arrayLength; i++){
-      var index  = arrayLength - 1 - i; 
-      //console.log(para[index]);
+    for (var i = 0; i < arrayLength; i++) {
+      var index = arrayLength - 1 - i;
+      console.log(para[index]);
       slideShowCarousel.removeChild(para[index]);
       // have to remove the index for further usage of para array
-      para.pop(); 
-      //console.log(para[index]);
+      para.pop();
+      console.log(para[index]);
     }
     moreThanThree = false;
   }
 
-  if (count > 2){
+  if (count > 2) {
     window.location.href = "work.html";
   }
 
   //console.log(slideShowCarousel);
-  //console.log(arrayLength); 
+  //console.log(arrayLength);
 }
 
 function viewSiteFunc() {
