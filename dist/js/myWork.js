@@ -239,12 +239,12 @@ function passProjects(number) {
     }
   }
 
-  if (number == 0 || number == 1 || number == 5) {
-    ViewSite.innerHTML = textGit;
-    //ViewSite.style.width = "12%";
-  } else {
+  if (number == 0 || number == 1 || number == 2) {
     ViewSite.innerHTML = textSite;
     //ViewSite.style.width = "10%";
+  } else {
+    ViewSite.innerHTML = textGit;
+    //ViewSite.style.width = "12%";
   }
 
   contentView.classList.remove("close");
